@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Games</title>
+</head>
+<body>
+
+<h1>🎯 Select a Game</h1>
+
+<ul>
+{% for game in games %}
+    <li>
+        <a href="/game/{{game}}">
+            {{game.title()}}
+        </a>
+    </li>
+{% endfor %}
+</ul>
+
+<br>
+<a href="/">Back</a>
+
+</body>
+</html>
